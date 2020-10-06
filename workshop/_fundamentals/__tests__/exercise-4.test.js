@@ -13,4 +13,5 @@ test("Exercise 4", () => {
     )
   ).toStrictEqual(["chris", "liv", "dave"]);
   // add more tests here...
+  expect(getValues([{ name: "okay" }, {name: "check"}, "null"])).toStrictEqual([null, null, null]);
 });

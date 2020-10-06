@@ -7,6 +7,19 @@
 
 const combineArrays = (arr1, arr2) => {
   // Insert missing solution please
+  //if (typeof arr1 === "string" && typeof arr2 === "string") {
+  let finalArr = arr1.concat(arr2).sort();
+
+  let isString = finalArr.every((element) => {
+    if (typeof element === "string") {
+      return true;
+    }
+  });
+  if (isString) {
+    return finalArr;
+  } else {
+    return undefined;
+  }
 };
 
 // 2. Do a console.log to verify your function.

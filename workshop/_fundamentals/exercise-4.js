@@ -7,7 +7,21 @@
 
 const getValues = (arr, key) => {
   // Insert missing solution please
+  // let newArr = [];
+
+  // arr.forEach((element) => {
+  //   newArr.push(element[key]);
+  // });
+  // return newArr;  
+  let newArr = arr.map((element) => {
+    if (!element[key]) {
+      return null;
+    }
+      return element[key];
+    })
+    return newArr;
 };
+
 
 // 2. Do a console.log to verify your function.
 
